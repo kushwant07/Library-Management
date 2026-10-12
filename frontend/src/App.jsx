@@ -34,11 +34,11 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
+    <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col font-sans">
       {/* Toast Alert */}
       {toast && (
-        <div className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-xl border border-indigo-500/30 bg-slate-900/95 px-4 py-2.5 text-xs font-semibold text-slate-100 shadow-xl backdrop-blur-md">
-          <span className="h-2 w-2 rounded-full bg-indigo-400 animate-ping" />
+        <div className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-xl border border-indigo-200 bg-white/95 px-4 py-2.5 text-xs font-semibold text-slate-800 shadow-xl shadow-slate-900/10 backdrop-blur-md">
+          <span className="h-2 w-2 rounded-full bg-indigo-600 animate-ping" />
           <span>{toast}</span>
         </div>
       )}
@@ -64,10 +64,10 @@ export function App() {
       </main>
 
       {/* Minimal Footer */}
-      <footer className="border-t border-slate-900 bg-slate-950 py-3 text-center text-xs text-slate-500">
+      <footer className="border-t border-slate-200 bg-white py-3.5 text-center text-xs text-slate-500">
         <div className="mx-auto max-w-6xl px-4 flex flex-col sm:flex-row items-center justify-between gap-1">
           <span>Library Management System &bull; MongoDB (Storage) & Redis (Cache)</span>
-          <span className="font-mono text-[11px] text-slate-600">Student Demonstration Project</span>
+          <span className="font-mono text-[11px] text-slate-400">Student Demonstration Project</span>
         </div>
       </footer>
     </div>
